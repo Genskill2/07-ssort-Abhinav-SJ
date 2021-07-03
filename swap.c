@@ -1,16 +1,16 @@
-int swap_max(int a[], int l, int n)
+void swap_max(int arr[], int l, int n)
 {
   int max,i,loc,t;
-  max = a[n];
+  max = arr[n];
   for(i=n;i<l;i++)
   {
-    if(a[i]>max)
+    if(arr[i]>max)
     {
-      max=a[i];
+      max=arr[i];
       loc=i;
     }
   }
-  t=a[n];
-  a[n]=a[loc];
-  a[loc]=t;
+  t=arr[n];
+  arr[n]=arr[loc];
+  arr[loc]=t;
 }
