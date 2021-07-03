@@ -20,6 +20,6 @@ void ssort(int arr[], int l)
   int i;
   for(i=0;i<l;i++)
   {
-    swap_max(arr,i,l);
+    swap_max(arr,l,i);
   }
 }
